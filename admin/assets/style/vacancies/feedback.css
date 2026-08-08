@@ -1,0 +1,117 @@
+        .view-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .application-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .applicant-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+        
+        .vacancy-link {
+            font-size: 14px;
+            color: var(--primary-color);
+        }
+        
+        .status-badge-large {
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .badge-new { background: #e3f2fd; color: #1565c0; }
+        .badge-reviewed { background: #fff3e0; color: #ef6c00; }
+        .badge-interview { background: #e8f5e9; color: #2e7d32; }
+        .badge-rejected { background: #ffebee; color: #c62828; }
+        .badge-accepted { background: #e8f5e9; color: #1b5e20; }
+        
+        .info-group {
+            margin-bottom: 20px;
+        }
+        
+        .info-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--gray-color);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            font-size: 16px;
+            color: var(--dark-color);
+        }
+        
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .cover-letter {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+        }
+        
+        .history-item {
+            padding: 15px;
+            border-left: 4px solid #e2e8f0;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .history-date {
+            font-size: 12px;
+            color: var(--gray-color);
+            margin-bottom: 5px;
+        }
+        
+        .history-status {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .history-by {
+            font-size: 12px;
+            color: var(--gray-color);
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .btn-download {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn-download:hover {
+            background: #5a6268;
+        }

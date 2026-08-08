@@ -1,0 +1,556 @@
+  .delivery-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .method {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow-light);
+            border: 2px solid transparent;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .method:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .method-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .method h3 {
+            font-size: 1.3rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        .method-description {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .method-details {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        .detail-item i {
+            color: var(--primary-color);
+        }
+        
+        .method-advantages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+        }
+        
+        .advantage-tag {
+            background: rgba(255, 71, 87, 0.1);
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .delivery-note {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(9, 132, 227, 0.1);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--info-color);
+            margin-top: 40px;
+        }
+        
+        .note-icon {
+            font-size: 30px;
+            color: var(--info-color);
+        }
+        
+        .note-content h4 {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            margin-bottom: 8px;
+        }
+        
+        .note-content p {
+            color: var(--gray-color);
+            line-height: 1.6;
+        }
+        
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .payment-method {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow-light);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+        
+        .payment-method:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        
+        .payment-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 36px;
+        }
+        
+        .payment-method h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .payment-method p {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        
+        .payment-cards {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 24px;
+            color: var(--dark-color);
+        }
+        
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow-light);
+            border: 2px solid var(--light-gray);
+            transition: var(--transition);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .pricing-card.featured {
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        
+        .pricing-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .price-subtitle {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 0 0 30px;
+            padding: 0;
+            flex: 1;
+        }
+        
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            color: var(--gray-color);
+        }
+        
+        .pricing-features li i {
+            color: var(--success-color);
+        }
+        
+        .pricing-features li i.fa-times {
+            color: var(--gray-color);
+            opacity: 0.5;
+        }
+        
+        .free-delivery-banner {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 30px;
+            border-radius: var(--border-radius);
+            color: white;
+            margin-top: 40px;
+        }
+        
+        .banner-icon {
+            font-size: 48px;
+        }
+        
+        .banner-content {
+            flex: 1;
+        }
+        
+        .banner-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .banner-content p {
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        .delivery-calculator {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--box-shadow-light);
+            margin: 40px 0;
+        }
+        
+        .calculator-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .calculator-form .form-group {
+            margin-bottom: 0;
+        }
+        
+        .calculator-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        .calculator-form input,
+        .calculator-form select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid var(--light-gray);
+            border-radius: var(--border-radius-sm);
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .calculator-form input:focus,
+        .calculator-form select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        #calculateBtn {
+            align-self: flex-end;
+        }
+        
+        .calculator-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .result-card {
+            background: #f8f9fa;
+            border-radius: var(--border-radius-sm);
+            padding: 20px;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .result-card:hover {
+            border-color: var(--primary-color);
+        }
+        
+        .result-card h4 {
+            font-size: 1.1rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .result-details {
+            margin-bottom: 15px;
+        }
+        
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .result-label {
+            color: var(--gray-color);
+        }
+        
+        .result-value {
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        .result-note {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .payment-cards i {
+    color: inherit;
+    transition: var(--transition);
+}
+
+    .payment-cards i.fa-cc-visa {
+        color: #1a1f71; /* Цвет Visa */
+    }
+
+    .payment-cards i.fa-cc-mastercard {
+        color: #eb001b; /* Цвет Mastercard */
+    }
+
+    .payment-cards i.fa-cc-mir {
+        color: #1c5f86; /* Цвет Мир */
+    }
+
+    .payment-cards i.fa-cc-paypal {
+        color: #003087; /* Цвет PayPal */
+    }
+
+    .payment-cards span {
+        font-size: 1.2rem;
+        color: var(--gray-color);
+    }
+
+    /* Эффект при наведении на иконки */
+    .payment-method:hover .payment-cards i {
+        transform: scale(1.1);
+    }
+
+    .payment-method:hover .payment-cards i.fa-cc-visa {
+        color: #1a1f71;
+    }
+
+    .payment-method:hover .payment-cards i.fa-cc-mastercard {
+        color: #f79e1b; /* Оранжевый Mastercard */
+    }
+
+    .payment-method:hover .payment-cards i.fa-cc-mir {
+        color: #00a2e8; /* Голубой Мир */
+    }
+        /* Стили для текста в способах оплаты */
+    .payment-cards span {
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--dark-color);
+        padding: 4px 10px;
+        border-radius: var(--border-radius-sm);
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        border: 1px solid var(--light-gray);
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 36px;
+        min-width: 60px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .payment-cards span:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-color: var(--primary-color);
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    }
+
+    /* Специфические стили для разных платежных систем */
+    .payment-cards span[style*="font-weight: 600;"] {
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        border: 1px solid var(--light-gray);
+    }
+
+    .payment-cards span[style*="font-weight: 600;"]:hover {
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-color: var(--primary-color);
+    }
+
+    /* Иконки вместе с текстом */
+    .payment-cards i + span {
+        margin-left: 5px;
+    }
+
+    /* Специфические стили для ЮMoney */
+    .payment-cards span:contains("ЮMoney") {
+        color: #000;
+        background: linear-gradient(135deg, #ffcc00 0%, #ff9900 100%);
+        border-color: #ff9900;
+    }
+
+    /* Специфические стили для QIWI */
+    .payment-cards span:contains("QIWI") {
+        color: #ff8c00;
+        background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%);
+        border-color: #ffcc80;
+    }
+
+    /* Специфические стили для "Счет" и "Реквизиты" */
+    .payment-cards span:contains("Счет"),
+    .payment-cards span:contains("Реквизиты") {
+        color: var(--info-color);
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        border-color: var(--info-color);
+    }
+
+    /* Специфические стили для "Наложка" и "В магазине" */
+    .payment-cards span:contains("Наложка"),
+    .payment-cards span:contains("В магазине") {
+        color: var(--success-color);
+        background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+        border-color: var(--success-color);
+    }
+
+    /* Эффект при наведении на весь метод оплаты */
+    .payment-method:hover .payment-cards span {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Адаптивность для текста */
+    @media (max-width: 480px) {
+        .payment-cards span {
+            font-size: 0.9rem;
+            min-width: 50px;
+            padding: 3px 8px;
+        }
+    }
+
+
+        @media (max-width: 768px) {
+            .delivery-methods,
+            .payment-methods,
+            .pricing-table,
+            .calculator-results {
+                grid-template-columns: 1fr;
+            }
+            
+            .free-delivery-banner {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .calculator-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .delivery-calculator {
+                padding: 20px;
+            }
+            
+            .method-details {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .delivery-note {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+        }
